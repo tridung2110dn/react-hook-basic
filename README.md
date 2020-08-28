@@ -1,4 +1,17 @@
 ### Learn & Practice React Hook Basic
 
-1.
-2. Todolist
+## REMEMBER
+
+- State: clone using [...] & use
+- Separate: UI & Logic Components
+
+## PART
+
+# 1.
+
+# 2. TodoList
+
+# 3. TodoForm
+
+<App> 
+    <TodoList>
