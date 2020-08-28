@@ -42,9 +42,8 @@ function App() {
       <TodoList
         todos={todoList}
         onTodoClick={handleTodoClick} />
-
     </div>
-  );
+  )
 }
 
 export default App;
