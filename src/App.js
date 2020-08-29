@@ -5,6 +5,7 @@ import TodoForm from "./component/TodoForm";
 import PostList from "./component/PostList";
 import Pagination from "./component/Pagination";
 import queryString from "query-string";
+import PostFiltersForm from "./component/PostFiltersForm";
 
 function App() {
   // --- declare state
@@ -76,11 +77,15 @@ function App() {
   }
 
   function handlePageChange(newPage) {
-    console.log(" nextpage", newPage);
+    console.log("nextpage: ", newPage);
     setFilters({
       ...filters,
       _page: newPage,
     });
+  }
+
+  function handlePostFiltersChange(newFilters) {
+    console.log("filters = ", newFilters)
   }
 
   return (
@@ -88,6 +93,7 @@ function App() {
       <h1> Hello Hook </h1>
       {/* <TodoForm onSubmit={handleTodoFormSubmit}/> */}
       {/* <TodoList todos={todoList} onTodoClick={handleTodoClick} /> */}
+      <PostFiltersForm onSubmit={handlePostFiltersChange} />
       <PostList posts={postList} />
       <Pagination pagination={pagination} onPageChange={handlePageChange} />
     </div>
