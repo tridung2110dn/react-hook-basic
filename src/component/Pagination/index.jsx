@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 Pagination.propTypes = {
   // pagination: _limit & _page
   pagination: PropTypes.object.isRequired,
-  onPageChange: PropTypes.array,
+  onPageChange: PropTypes.func,
 };
 
 Pagination.defaultProps = {
