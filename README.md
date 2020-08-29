@@ -2,20 +2,36 @@
 
 ## REMEMBER
 
-- State: clone using [...] & use
+- State: clone new state & use
 - Separate: UI & Logic Components
 
-### PART
+## METHOD/ FUNCTION
 
-App
-- get value, update state
-TodoList
-- new data [App], re-render
-TodoForm
-- manage form data
-- submit, and give data to parent [App]
+- Object Destructuring
+  - const {} = objects;
+- Array Destructuring
+  - const [] = arrays;
+- Spread Operator
+  - [...]
+- Array Prototype:
+  - slice
+  - splice
+  - push
+
+### COMPONENT
+
+- App
+  - get value, update state
+  - handle call API
+- TodoList
+  - get todos from [App] & render
+- TodoForm
+  - manage form data
+  - submit, and give data to parent [App]
+- PostList
+  - get posts from [App] & reder
 
 <App> 
     <TodoList>
     <TodoForm>
-
+    <PostList>
